@@ -14,7 +14,7 @@ class Citizen
     
     def check_age
         if @age >=60
-            "#{@first_name} #{@last_name} is already a Senior Citizen" if @age >= 60
+            "#{@first_name} #{@last_name} is already a Senior Citizen"
         else 
             "#{@first_name} #{@last_name} is still in the Working Class"
         end
@@ -23,9 +23,9 @@ class Citizen
     def check_benefits
         remaining_years = 60 - @age
         if @age > 60
-            puts "#{@first_name} #{@last_name} can avail Senior Citizen Benefits"
+            "#{@first_name} #{@last_name} can avail Senior Citizen Benefits"
         else
-            puts "#{@first_name} #{@last_name} will still have to pay required monthly dues for #{remaining_years} years more to be eligible to benefits later on."
+            "#{@first_name} #{@last_name} will still have to pay required monthly dues for #{remaining_years} years more to be eligible to benefits later on."
         end
     end
 end
